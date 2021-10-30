@@ -1,0 +1,425 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*ヘッダーロゴのサイズ調整
+---------------------*/
+.header_logo img{
+	width: 50%;
+}
+
+
+
+
+/*bodyの幅設定
+---------------------*/
+body{
+	width: 960px;
+	margin: 0 auto;
+
+}
+
+/*トップ画を設定
+---------------------*/
+
+
+.top{
+	background: url(../img/mainbg.png);
+	background-size: cover;
+	text-align: center;
+	height: 300px;
+	width: 100%;
+	vertical-align: middle;
+    background-position: center ;
+    color: white;
+	padding-top: 40px;
+}
+
+.top img{
+	height: 300px;
+}
+
+
+
+/*見出しタイトルの設定
+---------------------*/
+.h1_title{
+	font-size: 48px;
+}
+
+.p_title{
+	font-size: 36px;
+}
+
+
+/*headerメニュー
+---------------------*/
+.nav_flex{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border: solid;
+	border-color: #efefef;
+}	
+
+.nav_flex ul{
+	display: flex;
+	justify-content: center;
+}
+
+.header_list{
+	display: flex;
+	font-size: 21px;
+	gap: 20px;
+}
+
+
+/*aboutの調整
+---------------------*/
+.title_about{
+	margin-top: 120px;
+	margin-bottom: 24px;
+	text-align: center;
+	color: #ffd61a;
+}
+
+.title_about_text{
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+/*真ん中横並び画像
+---------------------*/
+/*
+右から左へ
+----------------------------*/
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*
+IE11対策
+----------------------------*/
+_:-ms-lang(x)::-ms-backdrop,
+.d-demo {
+  display: -ms-grid;
+  overflow: hidden;
+
+}
+/*----------------------------*/
+
+.d-demo__wrap {
+  display: flex;
+  overflow: hidden;
+}
+
+.d-demo__list {
+  display: flex;
+  list-style: none;
+}
+
+.d-demo__list--left{
+animation :infinity-scroll-left 20s infinite linear 0.5s both;
+}
+
+.d-demo__item {
+  width: calc(100vw / 6);
+}
+.d-demo__item > img{
+   width: 100%;
+}
+
+
+.d-demo img{
+	  width: 960px;
+	}
+
+.img_box_img img{
+	width: 100%;
+}
+
+/*コース全体に関わること
+---------------------*/
+.course{
+	width: 960px;
+}
+
+/*小見出しに関わること
+---------------------*/
+
+.little_title{
+
+	width: 960px;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 64px;
+	margin-bottom: 12px;
+}
+
+
+/*ニュースの調整
+---------------------*/
+.title_news{
+	margin-top: 120px;
+	margin-bottom: 24px;
+	text-align: center;
+	color: #ffd61a;
+
+}
+
+
+/*コース全体に関わること
+---------------------*/
+.course_title_text{
+	text-align: center;
+	margin-bottom: 64px;
+}
+
+.course_title2{
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+
+
+
+/*コース１
+---------------------*/
+.img_box_course1{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color:#fafafa;
+}
+
+.img_box_course1 img{
+	width: 50%;
+}
+
+.img_box_course1_text{
+	margin: 48px;
+	width: 80%;
+}
+
+
+/*コース２
+---------------------*/
+.img_box_course2{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color:#fafafa;
+}
+
+.img_box_course2 img{
+	width: 50%;
+}
+
+.img_box_course2_text{
+	margin: 48px;
+	width: 80%;
+}
+
+/*コース３
+---------------------*/
+.img_box_course3{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color:#fafafa;
+}
+
+.img_box_course3 img{
+	width: 50%;
+}
+
+.img_box_course3_text{
+	margin: 48px;
+	width: 80%;
+}
+
+
+/*ニュース全体に関わること
+---------------------*/
+.news_box_img{
+	display: flex;
+}
+
+.news_box_img_text{
+	width: 95%;
+}
+
+.news_title_text{
+	text-align: center;
+	margin-bottom: 64px;
+}
+
+/*アクセスの修正
+---------------------*/
+
+.access_text{
+	display: flex;
+	background-color:#fafafa;
+}
+
+.access_text_label{
+	margin-top: 60px;
+	margin-left: 200px;
+	margin-bottom: 80px;
+}
+
+.access_text_detail{
+	margin-top: 60px;
+	margin-left: 40px;
+	margin-bottom: 80px;
+}
+
+/*コンタクト調整
+---------------------*/
+.contact{
+	text-align: center;
+}
+
+.title_contact{
+	margin-top: 80px;
+}
+
+.title_contact_menu{
+	margin-bottom: 80px;
+}
+
+.title_contact_text1{
+	margin-bottom: 32px;
+}
+
+.title_contact_text2{
+	margin-bottom: 80px;
+}
+
+.contact_form{
+	text-align: left;
+	margin-left: 200px;
+}
+
+/*入力フォーム調整
+---------------------*/
+input{
+	border:1px solid #bfbfbf;  
+	height: 36px;
+	width: 328px;
+}
+
+dl > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+dt {
+    width: 200px;
+}
+dd {
+    flex: auto;
+}
+
+.conact_form_form{
+	margin-bottom: 24px;
+}
+
+/*入力フォーム>チェックボックス
+---------------------*/
+.checkbox input{
+	width:24px;
+	height:24px;
+}
+
+
+/*入力フォーム>textarea
+---------------------*/
+.textarea textarea{
+	margin-top: 32px;
+	width: 328px;
+	height: 108px;
+	border:1px solid #bfbfbf;  
+}
+
+
+/*送信ボタン
+---------------------*/
+.send-button{
+	margin: 40px;
+	background-color: #ffd61a;
+	width: 298px;
+	height: 54px;
+	border: transparent;
+	color: white;
+	margin-bottom: 200px;
+}
+
+
+
+/*ページトップ*/
+.pagetop
+    {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    }
+ 
+.pagetop a
+    {
+    display: block;
+    text-decoration: none;
+    }
+ 
+.pagetop:hover{
+    opacity: 0.85 ;
+}
+/*フッター
+---------------------*/
+footer{
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	text-align: center;
+	background-color: #707070;
+	font-size: 18px;
+	color: white;
+}
+
+
